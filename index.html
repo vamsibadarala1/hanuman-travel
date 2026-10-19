@@ -1,0 +1,751 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description"
+          content="Hanuman Travels - safe and comfortable local, outstation and airport car travel.">
+
+    <title>Hanuman Travels | Safe Rides, Comfortable Journeys</title>
+
+    <link rel="stylesheet"
+          href="{{ url_for('static', filename='css/style.css') }}">
+
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+
+<body>
+
+<!-- ================= HEADER ================= -->
+
+<header class="site-header">
+
+    <a class="brand" href="#home" aria-label="Hanuman Travels home">
+        <span class="brand-mark">
+            <i class="fa-solid fa-car-side"></i>
+        </span>
+
+        <span>
+            <strong>HANUMAN <b>TRAVELS</b></strong>
+            <small>Safe Rides · Comfortable Journeys · Always</small>
+        </span>
+    </a>
+
+    <button class="menu-toggle"
+            id="menuToggle"
+            type="button"
+            aria-label="Open navigation"
+            aria-expanded="false">
+        <i class="fa-solid fa-bars"></i>
+    </button>
+
+    <nav class="nav-links" id="navLinks">
+        <a href="#home">Home</a>
+        <a href="#cars">Our Cars</a>
+        <a href="#about">About Us</a>
+        <a href="#contact">Contact</a>
+        <a class="nav-cta" href="#booking">
+            <i class="fa-solid fa-phone"></i> Book Now
+        </a>
+    </nav>
+
+</header>
+
+
+<main>
+
+<!-- ================= HERO SECTION ================= -->
+
+<section class="hero" id="home">
+
+    <div class="hero-overlay"></div>
+    <div class="hanuman-watermark" aria-hidden="true"></div>
+
+    <div class="hero-content">
+
+        <p class="eyebrow">WELCOME TO</p>
+
+        <h1>Hanuman <span>Travels</span></h1>
+
+        <h2>Your Journey, Our Responsibility</h2>
+
+        <p class="hero-copy">
+            Comfortable, safe and reliable car travel services for
+            local trips, outstation journeys and airport transfers.
+            Travel with us and enjoy a smooth journey every time.
+        </p>
+
+        <a class="button button-gold" href="#booking">
+            Book Your Ride
+            <i class="fa-solid fa-arrow-right"></i>
+        </a>
+
+    </div>
+
+    <div class="hero-note">
+        <i class="fa-solid fa-shield-halved"></i>
+        Safe rides. Dependable service.
+    </div>
+
+</section>
+
+
+<!-- ================= OUR CARS ================= -->
+
+<section class="cars-section section" id="cars">
+
+    <div class="section-heading">
+
+        <p class="eyebrow dark">OUR CARS</p>
+
+        <h2>Choose Your Perfect Ride</h2>
+
+        <p>Well-maintained vehicles for every journey and budget.</p>
+
+    </div>
+
+
+    <div class="car-grid">
+
+        <!-- Baleno -->
+
+        <article class="car-card">
+
+            <div class="car-image">
+                <img src="{{ url_for('static', filename='images/baleno.jpg') }}"
+                     alt="Maruti Suzuki Baleno"
+                     loading="lazy">
+            </div>
+
+            <div class="car-info">
+                <h3>Maruti Suzuki Baleno</h3>
+                <p>Stylish, comfortable and fuel-efficient</p>
+
+                <a href="#booking"
+                   class="button button-blue"
+                   data-car="Baleno">
+                    Book Baleno
+                    <i class="fa-solid fa-arrow-right"></i>
+                </a>
+            </div>
+
+        </article>
+
+
+        <!-- Swift -->
+
+        <article class="car-card">
+
+            <div class="car-image">
+                <img src="{{ url_for('static', filename='images/swift.jpg') }}"
+                     alt="Maruti Suzuki Swift"
+                     loading="lazy">
+            </div>
+
+            <div class="car-info">
+                <h3>Maruti Suzuki Swift</h3>
+                <p>Compact and perfect for city rides</p>
+
+                <a href="#booking"
+                   class="button button-blue"
+                   data-car="Swift">
+                    Book Swift
+                    <i class="fa-solid fa-arrow-right"></i>
+                </a>
+            </div>
+
+        </article>
+
+
+        <!-- Hyundai i20 Diesel -->
+
+        <article class="car-card">
+
+            <div class="car-image">
+                <img src="{{ url_for('static', filename='images/i20_diesel.jpg') }}"
+                     alt="Hyundai i20 Diesel"
+                     loading="lazy">
+            </div>
+
+            <div class="car-info">
+                <h3>Hyundai i20 Diesel</h3>
+                <p>Comfortable for longer journeys</p>
+
+                <a href="#booking"
+                   class="button button-blue"
+                   data-car="Hyundai i20 Diesel">
+                    Book i20 Diesel
+                    <i class="fa-solid fa-arrow-right"></i>
+                </a>
+            </div>
+
+        </article>
+
+
+        <!-- Hyundai i20 N Line -->
+
+        <article class="car-card">
+
+            <div class="car-image">
+                <img src="{{ url_for('static', filename='images/i20_n_line.jpg') }}"
+                     alt="Hyundai i20 N Line"
+                     loading="lazy">
+            </div>
+
+            <div class="car-info">
+                <h3>Hyundai i20 N Line</h3>
+                <p>Sporty style and premium comfort</p>
+
+                <a href="#booking"
+                   class="button button-blue"
+                   data-car="Hyundai i20 N Line">
+                    Book i20 N Line
+                    <i class="fa-solid fa-arrow-right"></i>
+                </a>
+            </div>
+
+        </article>
+
+
+        <!-- Mahindra XUV300 -->
+
+        <article class="car-card">
+
+            <div class="car-image">
+                <img src="{{ url_for('static', filename='images/mahindra_xuv300.jpg') }}"
+                     alt="Mahindra XUV300"
+                     loading="lazy">
+            </div>
+
+            <div class="car-info">
+                <h3>Mahindra XUV300</h3>
+                <p>Spacious SUV for family trips</p>
+
+                <a href="#booking"
+                   class="button button-blue"
+                   data-car="Mahindra XUV300">
+                    Book XUV300
+                    <i class="fa-solid fa-arrow-right"></i>
+                </a>
+            </div>
+
+        </article>
+
+
+        <!-- Mahindra Thar -->
+
+        <article class="car-card">
+
+            <div class="car-image">
+                <img src="{{ url_for('static', filename='images/mahindra_thar.jpg') }}"
+                     alt="Mahindra Thar"
+                     loading="lazy">
+            </div>
+
+            <div class="car-info">
+                <h3>Mahindra Thar</h3>
+                <p>Adventure-ready SUV experience</p>
+
+                <a href="#booking"
+                   class="button button-blue"
+                   data-car="Mahindra Thar">
+                    Book Thar
+                    <i class="fa-solid fa-arrow-right"></i>
+                </a>
+            </div>
+
+        </article>
+
+
+        <!-- Maruti Suzuki Fronx -->
+
+        <article class="car-card">
+
+            <div class="car-image">
+                <img src="{{ url_for('static', filename='images/fronx.jpg') }}"
+                     alt="Maruti Suzuki Fronx"
+                     loading="lazy">
+            </div>
+
+            <div class="car-info">
+                <h3>Maruti Suzuki Fronx</h3>
+                <p>Compact and perfect for city rides</p>
+
+                <a href="#booking"
+                   class="button button-blue"
+                   data-car="Maruti Suzuki Fronx">
+                    Book Fronx
+                    <i class="fa-solid fa-arrow-right"></i>
+                </a>
+            </div>
+
+        </article>
+
+
+        <!-- Maruti Suzuki Grand Vitara -->
+
+        <article class="car-card">
+
+            <div class="car-image">
+                <img src="{{ url_for('static', filename='images/grand_vitara.jpg') }}"
+                     alt="Maruti Suzuki Grand Vitara"
+                     loading="lazy">
+            </div>
+
+            <div class="car-info">
+                <h3>Maruti Suzuki Grand Vitara</h3>
+                <p>Comfortable SUV for family journeys</p>
+
+                <a href="#booking"
+                   class="button button-blue"
+                   data-car="Maruti Suzuki Grand Vitara">
+                    Book Grand Vitara
+                    <i class="fa-solid fa-arrow-right"></i>
+                </a>
+            </div>
+
+        </article>
+
+    </div>
+
+</section>
+
+
+<!-- ================= BENEFITS ================= -->
+
+<section class="benefits" id="about">
+
+    <div class="benefit">
+        <i class="fa-solid fa-shield-halved"></i>
+        <div>
+            <h3>Safe &amp; Reliable</h3>
+            <p>Travel with peace of mind</p>
+        </div>
+    </div>
+
+    <div class="benefit">
+        <i class="fa-regular fa-clock"></i>
+        <div>
+            <h3>On-Time Service</h3>
+            <p>We value your time</p>
+        </div>
+    </div>
+
+    <div class="benefit">
+        <i class="fa-solid fa-indian-rupee-sign"></i>
+        <div>
+            <h3>Fair Rates</h3>
+            <p>Clear, upfront quotations</p>
+        </div>
+    </div>
+
+    <div class="benefit">
+        <i class="fa-solid fa-headset"></i>
+        <div>
+            <h3>Helpful Support</h3>
+            <p>Here to help with your trip</p>
+        </div>
+    </div>
+
+</section>
+
+
+<!-- ================= BOOKING FORM ================= -->
+
+<section class="booking-section" id="booking">
+
+    <div class="booking-background"></div>
+
+    <div class="booking-layout">
+
+        <div class="booking-left">
+
+            <p class="eyebrow">BOOK YOUR RIDE</p>
+
+            <h2>Fill in Your Travel Details</h2>
+
+            <p class="booking-intro">
+                Send your trip details and we'll get in touch
+                to confirm availability and pricing.
+            </p>
+
+
+            <!-- Flask success and error messages -->
+
+            {% with messages = get_flashed_messages(with_categories=true) %}
+
+                {% if messages %}
+
+                    {% for category, message in messages %}
+
+                        <div class="alert {{ category }}" role="status">
+                            {{ message }}
+                        </div>
+
+                    {% endfor %}
+
+                {% endif %}
+
+            {% endwith %}
+
+
+            <!-- Booking form -->
+
+            <form class="booking-form"
+                  action="{{ url_for('submit_booking') }}"
+                  method="POST">
+
+                <div class="form-grid">
+
+                    <!-- Customer name -->
+
+                    <div class="field">
+                        <label for="name">Full Name *</label>
+
+                        <input id="name"
+                               name="name"
+                               type="text"
+                               placeholder="Enter your full name"
+                               maxlength="100"
+                               autocomplete="name"
+                               required>
+                    </div>
+
+
+                    <!-- Phone number -->
+
+                    <div class="field">
+                        <label for="phone">Phone Number *</label>
+
+                        <input id="phone"
+                               name="phone"
+                               type="tel"
+                               placeholder="Enter your phone number"
+                               maxlength="20"
+                               autocomplete="tel"
+                               required>
+                    </div>
+
+
+                    <!-- Email -->
+
+                    <div class="field">
+                        <label for="email">Email (Optional)</label>
+
+                        <input id="email"
+                               name="email"
+                               type="email"
+                               placeholder="Enter your email"
+                               maxlength="254"
+                               autocomplete="email">
+                    </div>
+
+
+                    <!-- Pickup location -->
+
+                    <div class="field">
+                        <label for="pickup">Pickup Location</label>
+
+                        <input id="pickup"
+                               name="pickup"
+                               type="text"
+                               placeholder="Enter pickup location"
+                               maxlength="200">
+                    </div>
+
+
+                    <!-- Destination -->
+
+                    <div class="field">
+                        <label for="destination">Destination *</label>
+
+                        <input id="destination"
+                               name="destination"
+                               type="text"
+                               placeholder="Enter destination"
+                               maxlength="200"
+                               required>
+                    </div>
+
+
+                    <!-- Travel date -->
+
+                    <div class="field">
+                        <label for="travel_date">Travel Date</label>
+
+                        <input id="travel_date"
+                               name="travel_date"
+                               type="date"
+                               min="{{ today }}">
+                    </div>
+
+
+                    <!-- Trip type -->
+
+                    <div class="field">
+                        <label for="trip_type">Trip Type</label>
+
+                        <select id="trip_type" name="trip_type">
+
+                            <option value="Local">Local</option>
+                            <option value="Outstation">Outstation</option>
+                            <option value="Airport">Airport</option>
+                            <option value="Family">Family</option>
+                            <option value="Corporate">Corporate</option>
+
+                        </select>
+                    </div>
+
+
+                    <!-- Car selection -->
+
+                    <div class="field">
+                        <label for="car_type">Car Type</label>
+
+                        <select id="car_type" name="car_type">
+
+                            <option value="Baleno">Maruti Suzuki Baleno</option>
+                            <option value="Swift">Maruti Suzuki Swift</option>
+                            <option value="Hyundai i20 Diesel">Hyundai i20 Diesel</option>
+                            <option value="Hyundai i20 N Line">Hyundai i20 N Line</option>
+                            <option value="Mahindra XUV300">Mahindra XUV300</option>
+                            <option value="Mahindra Thar">Mahindra Thar</option>
+                            <option value="Maruti Suzuki Fronx">Maruti Suzuki Fronx</option>
+                            <option value="Maruti Suzuki Grand Vitara">Maruti Suzuki Grand Vitara</option>
+
+                        </select>
+                    </div>
+
+
+                    <!-- Passenger count -->
+
+                    <div class="field full">
+                        <label for="passengers">Number of Passengers</label>
+
+                        <select id="passengers" name="passengers">
+
+                            {% for number in range(1, 9) %}
+
+                                <option value="{{ number }}">
+                                    {{ number }}
+                                </option>
+
+                            {% endfor %}
+
+                        </select>
+                    </div>
+
+
+                    <!-- Additional requirements -->
+
+                    <div class="field full">
+                        <label for="requirements">
+                            Additional Requirements (Optional)
+                        </label>
+
+                        <textarea id="requirements"
+                                  name="requirements"
+                                  rows="3"
+                                  maxlength="1000"
+                                  placeholder="Return trip, luggage or other requests"></textarea>
+                    </div>
+
+                </div>
+
+
+                <!-- Submit -->
+
+                <button class="button button-gold submit-button"
+                        type="submit">
+
+                    <i class="fa-regular fa-paper-plane"></i>
+                    Submit Booking Enquiry
+
+                </button>
+
+                <p class="privacy-note">
+                    <i class="fa-solid fa-lock"></i>
+                    Your details are used to respond to your enquiry.
+                </p>
+
+            </form>
+
+        </div>
+
+
+        <!-- Booking information -->
+
+        <aside class="booking-right">
+
+            <p class="script-line">
+                Your Destination<br>
+                is <span>Our Destination</span>
+            </p>
+
+            <div class="trip-type">
+                <span class="trip-icon">
+                    <i class="fa-solid fa-location-dot"></i>
+                </span>
+
+                <div>
+                    <h3>Local Trips</h3>
+                    <p>Explore your city with ease</p>
+                </div>
+            </div>
+
+            <div class="trip-type">
+                <span class="trip-icon">
+                    <i class="fa-solid fa-car"></i>
+                </span>
+
+                <div>
+                    <h3>Outstation Trips</h3>
+                    <p>Make long drives comfortable</p>
+                </div>
+            </div>
+
+            <div class="trip-type">
+                <span class="trip-icon">
+                    <i class="fa-solid fa-plane"></i>
+                </span>
+
+                <div>
+                    <h3>Airport Transfers</h3>
+                    <p>Plan your airport journey</p>
+                </div>
+            </div>
+
+        </aside>
+
+    </div>
+
+</section>
+
+</main>
+
+
+<!-- ================= FOOTER ================= -->
+
+<footer id="contact" class="site-footer">
+
+    <div class="footer-main">
+
+        <a class="brand footer-brand" href="#home">
+
+            <span class="brand-mark">
+                <i class="fa-solid fa-car-side"></i>
+            </span>
+
+            <span>
+                <strong>HANUMAN <b>TRAVELS</b></strong>
+                <small>Safe Rides · Comfortable Journeys · Always</small>
+            </span>
+
+        </a>
+
+
+        <div>
+            <h3>Quick Links</h3>
+            <a href="#home">Home</a>
+            <a href="#cars">Our Cars</a>
+            <a href="#about">About Us</a>
+            <a href="#booking">Book Now</a>
+        </div>
+
+
+        <div>
+            <h3>Contact Us</h3>
+
+            <p>
+                <i class="fa-solid fa-phone"></i>
+                8897297647
+            </p>
+
+            <p>
+                <i class="fa-solid fa-envelope"></i>
+                hanumantravels@gmail.com
+            </p>
+
+            <p>
+                <i class="fa-solid fa-location-dot"></i>
+                Yanam
+            </p>
+        </div>
+
+
+        <div>
+            <h3>Follow Us</h3>
+
+            <p class="social-links">
+                <a href="#" aria-label="Facebook">
+                    <i class="fa-brands fa-facebook"></i>
+                </a>
+
+                <a href="#" aria-label="Instagram">
+                    <i class="fa-brands fa-instagram"></i>
+                </a>
+
+                <a href="#" aria-label="WhatsApp">
+                    <i class="fa-brands fa-whatsapp"></i>
+                </a>
+            </p>
+
+            <p class="jai">|| Jai Hanuman ||</p>
+        </div>
+
+    </div>
+
+
+    <div class="footer-bottom">
+        <span>© 2026 Hanuman Travels. All rights reserved.</span>
+        <span>Travel safely. Travel comfortably.</span>
+    </div>
+
+</footer>
+
+
+<!-- ================= JAVASCRIPT ================= -->
+
+<script>
+    // Mobile navigation
+    const menuToggle = document.getElementById("menuToggle");
+    const navLinks = document.getElementById("navLinks");
+
+    menuToggle.addEventListener("click", function () {
+        const isOpen = navLinks.classList.toggle("open");
+
+        menuToggle.setAttribute(
+            "aria-expanded",
+            String(isOpen)
+        );
+    });
+
+
+    // Close the mobile menu after selecting a link
+    navLinks.querySelectorAll("a").forEach(function (link) {
+        link.addEventListener("click", function () {
+            navLinks.classList.remove("open");
+
+            menuToggle.setAttribute(
+                "aria-expanded",
+                "false"
+            );
+        });
+    });
+
+
+    // Select the matching car when a car card is clicked
+    document.querySelectorAll("[data-car]").forEach(function (link) {
+        link.addEventListener("click", function () {
+            const carSelect = document.getElementById("car_type");
+
+            carSelect.value = link.dataset.car;
+        });
+    });
+</script>
+
+</body>
+</html>
